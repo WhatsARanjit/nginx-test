@@ -1,0 +1,7 @@
+name 'WhatsARanjit-nginx'
+version '0.0.1'
+author 'Ranjit Viswakumar'
+summary 'Puppet Exercise'
+description 'This module was written for a Puppet Professional Services interview'
+license 'No license'
+project_page 'https://github.com/WhatsARanjit/nginx-test'
