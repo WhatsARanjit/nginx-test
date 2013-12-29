@@ -10,13 +10,13 @@ class nginx (
   class { 'nginx::yum':
     repo_url => $repo_url,
   }
-  
+
   class { 'nginx::install':
     ensure      => $ensure,
     nginx_user  => $nginx_user,
     nginx_group => $nginx_group,
   }
-  
+
   class { 'nginx::service':
     ensure         => $ensure,
     running        => $running,

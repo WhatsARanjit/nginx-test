@@ -5,7 +5,11 @@ class nginx::params {
   $nginx_group  = 'nginx'
   $listen_port  = 80
   case $::operatingsystem {
-    centos  : { $repo_url = 'http://nginx.org/packages/centos/$releasever/$basearch/' }
-    default : { $repo_url = 'http://nginx.org/packages/rhel/$releasever/$basearch/' }
+    centos: {
+      $repo_url = 'http://nginx.org/packages/centos/$releasever/$basearch/'
+    }
+    default: {
+      $repo_url = 'http://nginx.org/packages/rhel/$releasever/$basearch/'
+    }
   }
 }

@@ -1,4 +1,4 @@
 nginx-test
 ==========
 
-Test Puppet module for nginx
+Test Puppet module for nginx.
